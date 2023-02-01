@@ -1,5 +1,13 @@
 import { Container } from "./styles";
 
+import { Task } from "../Task";
+
 export function ContentWrapper() {
-	return <Container></Container>;
+	return (
+	<Container>
+		<Task 
+			isNew
+			placeholder="Nova Tarefa"/>	
+	</Container>
+	);
 }

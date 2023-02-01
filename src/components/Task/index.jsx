@@ -1,19 +1,12 @@
-import { Container } from "./styles"
+import { Button } from "../Button";
 
-export function Task({isNew, value}){
-    return (
-        <Container isNew={isNew}>
-            <input 
-                type="text"
-                value={value}
-                readOnly={!isNew}
-            />
+import { Container } from "./styles";
 
-            <button
-                type="button"
-            >
-
-            </button>
-        </Container>
-    )
+export function Task({ isNew }) {
+	return (
+		<Container isNew={isNew}>
+			<Button />
+			<input />
+		</Container>
+	);
 }
