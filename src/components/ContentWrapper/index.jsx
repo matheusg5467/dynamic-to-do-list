@@ -8,6 +8,9 @@ export function ContentWrapper() {
 		<Task 
 			isNew
 			placeholder="Nova Tarefa"/>	
+		<Task 
+			placeholder="Nova Tarefa"/>	
+
 	</Container>
 	);
 }

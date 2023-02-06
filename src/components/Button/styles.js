@@ -8,4 +8,5 @@ export const Container = styled.button`
 
 	margin: 1.4rem 1.5rem 1.6rem 1.5rem;
 	border-radius: 2rem;
+	border: none;
 `;
