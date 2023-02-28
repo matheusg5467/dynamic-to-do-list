@@ -28,6 +28,12 @@ export default createGlobalStyle`
         font-size: 4.8rem;
     }
 
+    text {
+        font-family: 'Dosis', sans-serif;
+        font-weight: 700;
+        font-size: 4.8rem;
+    }
+
     button {
         cursor: pointer;
         transition: filter 0.2s;

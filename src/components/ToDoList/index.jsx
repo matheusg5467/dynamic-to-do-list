@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Container } from "./styles";
 
-import { Task } from "./styles";
+import { NewTask } from "./styles";
 
 import { List } from "./styles";
 
@@ -44,13 +44,13 @@ export function ToDoList() {
 	
 	return (
 		<Container>
-			<Task isNew onSubmit={handleAddTask}>			
+			<NewTask isNew onSubmit={handleAddTask}>			
 				<AddButton/>			
 				<input value={input} placeholder='New Task' onInput={(e) => {
 					setInput(e.target.value)
 					}
 				}/>
-			</Task>
+			</NewTask>
 
 			<div>
 				<ul>
@@ -61,7 +61,10 @@ export function ToDoList() {
 								complete = {todo.complete}
 								onClick = {() => {handleComplete(todo.id)}}
 							>
-								{todo.task}
+								<Button/>
+								<text>
+									{todo.task}
+								</text>
 							</List>
 						);
 					})}
