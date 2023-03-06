@@ -58,13 +58,12 @@ export function ToDoList() {
 						return (
 							<List
 								id = {todo.id}
+								key = {todo.id}
 								complete = {todo.complete}
 								onClick = {() => {handleComplete(todo.id)}}
 							>
 								<Button/>
-								<text>
-									{todo.task}
-								</text>
+								<input value = {todo.task} disabled/>
 							</List>
 						);
 					})}

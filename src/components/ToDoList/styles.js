@@ -26,8 +26,8 @@ export const NewTask = styled.form`
 	margin: 5rem 2rem 5rem 4rem;
 
 	> #add-button {
-		border: none; 
-		background: none;		
+		border: none;
+		background: none;
 	}
 
 	> input {
@@ -68,20 +68,20 @@ export const List = styled.li`
 
 	margin: 5rem 2rem 5rem 4rem;
 
-		> text {
-			height: auto;
-			width: 84rem;
+	> input {
+		height: auto;
+		width: 84rem;
 
-			display: flex;
-			align-items: center;
+		display: flex;
+		align-items: center;
 
-			background-color: transparent;
-			color: ${({ theme }) => theme.COLORS.GREEN_TEXT};
-			border: none;
+		background-color: transparent;
+		color: ${({ theme }) => theme.COLORS.GREEN_TEXT};
+		border: none;
 
-			margin-top: 1.3rem;
-			margin-bottom: 0.6rem;
+		margin-top: 1.3rem;
+		margin-bottom: 0.6rem;
 
-			padding: 0 1.5rem;
-		}
-`
+		padding: 0 1.5rem;
+	}
+`;
