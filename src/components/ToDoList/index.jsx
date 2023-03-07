@@ -40,6 +40,10 @@ export function ToDoList() {
 			return item;
 		});
 		setTodoList(list);
+		
+		let filtered = todoList.filter((task) => task.id !== id);
+
+		setTodoList(filtered);
 	};
 	
 	return (
@@ -58,8 +62,8 @@ export function ToDoList() {
 						return (
 							<List
 								id = {todo.id}
-								key = {todo.id}
 								complete = {todo.complete}
+								key = {todo.id}
 								onClick = {() => {handleComplete(todo.id)}}
 							>
 								<Button/>
